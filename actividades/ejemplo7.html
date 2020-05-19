@@ -1,0 +1,255 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>los formularios</title>
+</head>
+<body>
+    <div style="width: 500px;">
+        <h3>Los formularios</h3>
+        <p>Hasta ahora todos los elementos quer hemos visto para la realizacion de las paginas HTML carecian 
+            de interactividad real con el usuario , ahora con los formularios veremos como el usurio puede 
+            pedir y ofrecer informacion.</p>
+        <P>Por ejemplo , podemos diseñar un formulario para que los internautas puedan ingresar sus datos 
+            personal y recibir una determinada informacion.</P>
+        <p>Para comprender  su funcionamiento imaginemos el tipico formulario de papel en el que aparecen 
+            casillas de texto ,cuadros de seleccion, etc.</p>
+        <h3>Introduccion</h3>
+        <p>Los formularios pueden introducirse  en cualquier parte del documento , es decir , en tablas , dentro 
+            de un texto preformateado, etc . Evidentemente un formulario puede contener en su interior listas,
+            imagenes, etc. </p>
+    </div>
+</body> 
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <title>text input </title>
+</head>
+<body>
+    <div style= "width:500px;">
+        <h3>Declaracion de formulario Form</h3>
+        <p>Los elementos que componen un formulario deben encontrarse entre las etiquetas
+        &lt; Form&gt; y &lt;&#47;form&gt;</p>
+        <p> A continuacion , se situaran todas las etiquetas que generan los botones, entradas de texto 
+            casillas de verificacion , listas , etc.</p>
+        <p>Veamos los atributos que determina la accion que debe realizarce al pulsar el boton de ejecucion</p>
+        <p><b>Action</b>Atributo que determina  la accion que debe realizarse al pulsar el boton de ejecucion</p>
+        <p><b>Method</b>Indica en metodo de transferencia de la informacion introducida en el formulario. 
+        Puede emplearse los metodos <b>GET</b> Y <b>POST</b>
+        </p>
+            <form action="http://www.example.com/login.php">
+            <p>username:
+                <input type="text" name="username" size="15" maxlenght="30"/>
+                    </p>
+                </form>
+            </p>
+        </div>          
+</body>
+</html>
+
+<html  lang="Es">
+    <head>
+            <meta charset="UTF-8">
+    <title>Password input</title>
+    </head>
+
+<body>
+    <form action="http://www.example.com/login.php">
+        <p>Username
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+        <p>Password
+            <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+    </form>   
+</body>
+</html>
+
+
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <title>textarea</title>
+</head>
+<body>
+    <form action="http://www.example.com/comments.php">
+        <p>¡Que te parecio este Trabajo?</p>
+        <textarea name="comments" cols="20" rows="4">Ingrese sus comentarios...</textarea>
+    </form>
+</body>
+</html>
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Radio Button</title>
+    </head>        
+<boby>
+        <form action="http://www.example.com/profile.php">
+            <p>Por favor , seleccione su genero de musica favorito:
+            <br />
+            <input type="radio" name="genre" value="ROCK" checked="checked" /> Rock
+            <input type="radio" name="genre" value="POP" /> Pop
+            <input type="radio" name="genre" value="JAZZ" /> Jazz
+            </p>
+        </form>
+</boby>
+</html>
+
+
+
+<html lang="es" >
+<head>      
+    <meta charset="UTF-8">
+    <litle>Checkbox</title>
+</head>
+<body>
+<form action="http://www.example.com/profile.php">
+    <p>Por Favor , seleccione sus servicios de musica favoritos:
+        <br />
+        <input type="checkbox" name="service" value="itunes" checked="checked" /> itunes
+        <input type="checkbox" name="service" value="deezer" /> deezer
+        <input type="checkbox" name="service" value="spotify" /> spotify
+    </p>
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>Drop Down List Box</TITLE>
+</head>
+<body>
+<form action="http://www.example.com/profile.php">
+    <p>En que dispositivo escuchas musica?</p>
+        <select name="devices">
+            <option value="ipod" >ipod</option>
+            <option value="radio" >radio/option>
+            <option value="Computer" >computer</option>
+        </select>
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>Multiple Select Box</Title>
+</head>
+<body>
+<form action="http://www.example.com/profile.php">
+    <p>Tocas alguno de los siguientes instrumentos?
+    (Puede seleccionar mas de una opcion manteniendo presionado la tecla control)</p>
+        <select name="instruments" size="3" multiple="multiple" >
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums" >drums</option>
+            <option value="keyboard" selected="selected">keyboard</option>
+            <option value="bass" >bass</option>
+        </select>
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>File input Box</TITLE>
+</head>
+<body>
+<form action="http://www.example.com/upload.php" method="post">
+    <p>Sube tu cancion en formato MP3:</p>
+        <br />
+        <input type="file" name="user-song" /><br />
+        <input type="submint" value="upload" /><br />
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>Submit Button</TITLE>
+</head>
+<body>
+<form action="http://www.example.com/subscribe.php">
+    <p>Susbribete a nuestra lista de correo electronico:</p>
+        <input type="text" name="email" /><br />
+        <input type="submint" name="subscribe" value="subscribe" />
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>labelling form controls</title>
+</head>
+<body>
+<form action="http://www.example.com/subscribe.php">
+    <label> Edad: <input type="text" name="age"/></label>
+    <br />
+    Genero
+    <input id="female" type="radio" name="gender" value ="f">
+    <label for="female">female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <input for="male">Male</label>
+</form>    
+</body>
+</html>
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>Grouping Form Elements</title>
+</head>
+<body>
+<form action="http://www.example.com/subscribe.php">
+    <fieldset>
+        <legend>Datos de contacto></legend>
+        <label>Email:<br /><input type=text name="email" /></label><br />
+        <label>telefono movil:<br /><input type="text" name="mobile" /></label><br />
+        <label>telefono fijo:<br /><input type="text" name="telephone" /></label>
+    </fieldset> 
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>HTML5 form Validation</title>
+</head>
+<body>
+<form action="http://www.example.com/login/" method="POST">
+    <label for="username" >Username:</label>
+    <input type="text" name="username" id="username" required="required" /><br />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required="required" />
+    <input type="submit" value="submit" />
+</form>    
+</body>
+</html>
+
+
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <litle>HTML5 Date Input</title>
+</head>
+<body>
+<form action="http://www.example.com/bookings" method="Post">
+    <label for="username">Fecha de salida:</label>
+    <input type="date" name="depart" />
+    <input type="submit" valeu="submit" />
+</form>    
+</body>
+</html>

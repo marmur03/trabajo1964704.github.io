@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <Title>ID atribute</Title>
+    <Style type="text/css">
+        p#pullquote {
+                text-transform: uppercase; } 
+        </Style>
+</head>
+<body>
+        <p>Cada elemento HTML puede llevar el atributo id. se utiliza para identificar de forma unida ese elemento
+        de otros elementos de la pagina. su valor debe comenzar con una letra o un guion bajo(no un numero o cualquier otro caracter).
+        es importante que no hay dos elementos en la misma pagina tienen el mismo valor para sus atributos ID (de lo contrario
+        , el valor ya no es unico)</p>
+        <p id="pullquote">dar a un elemento una identidad unica le permite darle un estilo diferente que cualquier otra instancia
+        del mismo elemento en la pagina.</p>    
+        <p>Por ejemplo, es posible que desee asignar un parrafo dentro de la pagina (quizas un parrafo que contiene una 
+            cotizacion de extraccion) un estilo diferente que todos los demas parrafos. En el ejemplo, el parrafo con el 
+            atributo ID cuyo valor es pullquote se hace en mayusculas usando CSS.</p> 
+</body>
+</html>
+
+
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <title>Class Attribute</title>
+        <style type="text/css">
+            .important   {
+                    text-transform: uppercase; }
+            .admittance  {
+                    color: #FF6666; }
+            </style>
+</head>
+<body>
+    <p class="important">cada elemento HTML tambien puede llevar un atributo de clase. A veces, en lugar de identificar de 
+    de forma unica en elemento dentro de un documento, deseara una manera de identificar varios elementos como diferentes
+    de los demas elementos de la pagina. por ejemplo, es posible que tenga algunos parrafos de texto que contengan informacion
+    que sea mas importante que otros y desee distinguir  estos elementos, o puede que desee diferenciar entre vinculo que apuntan
+    a otras paginas de su propio sitio y vinculos que apuntan a sitios externos.</p>
+
+    <p>Para ello , puede utilizar el atributo de clase. su valor debe describir la clase a la que pertenece. en el ejemplo de la izquierda,
+    los parrafos  clave tienen un atributo de clase cuyo valor es importante. el atributo de clase es cualquier elemento puede compartir el
+    mismo valor. por lo tanto, en este ejemplo, el valor de important tambien se podria usar encabezados y vinculos. 
+    
+    </p>
+    <p class="important admittance">De forma predeterminada , el uso  de estos  atributos no afecta a la presentacion de un elemento. solo
+    cambiara su apariencia si hay una regla CSS que indica  que se debe mostrarse de manera diferente. el CSS se ha aplicado para hacer los 
+    elementos con un atributo de la clase cuyo valor es la admision roja. si desea indicar que un elemento pertenece a varias clases , puede
+    separar los nombres de clase con un espacio.</p>
+</body>
+</html>
+
+
+
+<html>
+
+        <head>
+                <meta charset = "UTF-8">
+                <Title>Grouping Block Elements</Title>
+                <style type="text/css">
+                        .gallery {
+                            text-transform: uppercase; color: #2449c6; }  
+                        dvi#pheader  {
+                            color: #ff6666; }
+                        div#pfooter {
+                            color: #72d27c; }
+                </stile>        
+        </head>
+    <body>
+    <div id="pheader"> <p> el elemento &lt;div &gt; permite agrupar un conjunto de elementos juntos en un cuadro de nivel de bloque . por ejemplo, puede crear un elemento 
+    &lt;div&gt; para que contenga todos los elementos del encabezado del sitio (el logotopo y la navegacion), o puede crear un elemento 
+    &lt;div &gt ; para que contenga informacion en bloques.</p>
+    </div><¡-- final del div pheader -->
+    <div id="pbody"> <P> en un navegador, el contenido del elemento &lt;div &gt; comenzara en 
+    una nueva linea, pero aparte de esto no hara ninguna diferencia en la presentacion
+    de la pagina. <span class="gallery">Sin embargo el uso de un atributo ID o Class en el elemnto &lt;div &gt; en la pantalla y cambiar la apariencia de todos los elementos
+    contenidos en el.</span> tambien puede facilitar el seguimiento del codigo si ha utilizado elementos &lt;div &gt ;
+    para contener cada seccion de la pagina.</p>
+    </div><!--final del div pbody -->
+    <div id=pfooter"> <p> dado que puede haber varios otros elementos dentro de un elemento
+    ;div ; puede ser util agregar un comentario despues de la etiqueta &lt;&#47;div&gt ; de cierre. Esto le permite ver 
+        claramente a que etiqueta de apertura se supone que corresponde. >/p>
+    </div><! -- final del div pfooter -->
+    </body>
+</html>
+
+
+
+<html>
+        <head>
+            <meta charset="UFT-8">
+            <Title>iframes</litle>
+        </head>
+        <body>
+            iframe widht="450" height="350"
+            src="http://maps.google.co.uk/maps?q=IED+Gonzalo+Arango+bogota&amp;output=embed>
+            </iframe>
+            <p>
+            un iframe es como una pequeña ventana que se ha cortado en tu pagina, y en esa ventana puedes ver otra pagina. 
+            el termino iframe es una abreviatura de marco alineado.un uso comun de iframes (que puede haber visto en varios sitios web)
+            es incrustar un mapa de google en una pagina. el contenido del iframe puede ser cualquier pagina HTML (ya sea en el mismo servidor o en cuelquier
+            otro lugar en la web). se crea un iframe mediante el elemento &lt;iframe&gt;. hay algunos atributos que necesitaras saber para usarlo: 
+            </p>
+            <p>
+            <b>src:</b> el atributo <i>src</i> especifica la direccion Url de la pagina que se mostrara en el iframe.</p>
+            <p><b> height:</b>el atributo <i> height </i> especifica la altura del iframe en pixeles.</p>
+            <p><b>widht:</b> el atributo <i>width</i> especifica al ancho del iframe en pixeles.</p>
+        </boby>
+</html> 
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>information about your pages - meta</title>
+        <meta name="description" content= "esta es mi home Page personal"/>
+        <meta name="keywords" content="informacion, personal, blog"/>
+        <meta name="robots" content="nofollow" />
+        <meta http-equiv="author" content="jesus rubio" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="Martes, 30 jul 2019 23:59:59 GMT" />
+    </head>
+    <body>
+        <p>Por favor, vea el origen de esta pagina para examinar los metadatos. </p> <hr/>
+        <p>el elemento &lt ;meta &gt; reside dentro del elemento &lt;head &gt; y contiene 
+        informacion sobre esa pagina web. No se  visible para los usuarios , pero cumple 
+        una serie de propositos , como decir a los motores de busqueda acerca de su pagina,
+        quien lo creo , y si es o no es sensible al tiempo . ( si la pagina es sensible al tiempo,
+        se puede establecer para expirar.)
+        el elemento &lt ; meta &gt es un elemento vavio , por lo que no tiene una etiqueta de
+        cierre, Utiliza atributos para llevar la informacion.   
+        Los atributos mas comunes son el nombre y los atributos de contenido, que tienden a usarse juntos .
+        Estos atributos de contenido , que tienden a usarse juntos. estos atributos especifican las propiedades de
+        toda la pagina. el valor del atributo name es la prioridad que esta estableciendo y el valor del atributo content es el 
+        valor que desea dar a esta propiedad.</p>
+        <p><b>descripcion:</b> contiene una descripcion de la pagina. esta descripcion es comunmente utilizada 
+        por los motores de busqueda para entender de que se trata la pagina y debe ser un maximo de 155 caracteres. a veces tambien
+        se muestra en los resultados del motor de busqueda.</p>
+        <p><b>Keywords:>/b> contiene una lista de palabras separadas por comas en las que un usuario puede usar para buscar la 
+        pagina. En la practica , esto ya no tiene ningun efecto notable sobre como  los motores de busqueda indexan su sitio.</p>
+        <p><b>robots:</b>esto indica si los motores de busqueda deben agregar  esta pagina a sus resultados de busqueda o no. 
+        se puede usar un valor de noindex si no se debe agregar esta pagina. un valor de nofollow se puede utilizar si los motores de
+        busqueda deben agregar esta pagina en sus resultados , pero no las paginas a las que enlaza.</p>
+        <p><b>author:</b> define el autor de la pagina web. </p/
+        <p><b>pragma:</b> esto impide que el explorador almacenar en cache la pagina. (Es decir ,almacenarlo localmente para ahorrar 
+        tiempo descargarlo en visitas subsiguientes.).>/p>
+        <p><b>expires:</b> expira porque los exploradores suelen almacenar en cache el contenido de una pagina, la opcion expires se puede
+        usar para indicar cuando debe expirar la pagina ( y ya no se almacena en cache). Tenga en cuenta que la fecha debe especificarse
+        en el formato que se muestra.</p>
+    </body>
+</html>
+    
+
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="description" content="IED,Gonzalo,Arango, colegio, distrital, COLOMBIA" />
+        <title> IED colegio Gonzalo Arango - Home page </title>
+
+    </head>
+    <body>
+        <div id="header">
+            <h1> IED Colegio Gonzalo Arango</h1>
+            <ul>
+                <li><a href="https://www.redacademica.edu.colegios/colegio-gonzalo-arango-ied">home page</a>/li>
+                <li>a href="https://www.gonzaloarango.com/index.html">quien es Gonzalo Arango</a></li>
+            </ul>
+        </div><!--end header -->
+        <div id="content">
+            <p><span class="contact">telefono</span> +57 1 685 76 74</p>
+            <p><span class="contact">Email</ span> <a href="mailto:colgonzaloarango@redp.edu.co">colgonzaloarango@redp.edu.co</a></p>
+            <iframe width="450" height="350" src="http://maps.google.co.uk/maps?q=IED+Gonzalo+Arango+bogota&amp;output=embed">
+            </iframe>
+        </div><!-- end content -->
+        <p>&copy; <i>IED Colegio Gonzalo Arango</i></p>
+    </body>
+    </html>
