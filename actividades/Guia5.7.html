@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> How CSS Rules Cascade</title>
+    <style type="text/css">
+        * {
+            font-family: Arial, Verdena, sans-serif;
+        }
+
+        h1 {
+            font-family: "courier new", Courier, monospace;
+        }
+
+        i {
+            color: green;
+        }
+
+        i {
+            color: red;
+        }
+
+        b {
+            color: pink;
+        }
+
+        p b {
+            color: blue !important;
+        }
+
+        p b {
+            color: violet;
+        }
+
+        p#intro font-size: 100%
+        }
+
+        p {
+            font-size: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>potatoes</h1>
+    <p id="intro">hay <i> muchas </i> variedades de <b> papas</b>.</p>
+    <p> por lo general se conocen las papas: pastusa, sabanera y las papas criollos.</p>
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, verdana, Sans-serif;
+            color: #665544;
+            padding: 10px;
+        }
+
+        .page {
+            border: 1px solid #665544;
+            background-color: #efefef;
+            padding: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h1>potatoes</h1>
+        <p id="intro">hay <i> muchas</i> variedades de <b> papas</b>.</p>
+        <p>Por lo general se conocen las papas: pastusa, sabanera y las papas criollas.</p>
+    </div>
+</body>
+
+</html>

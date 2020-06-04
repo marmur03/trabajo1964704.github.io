@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>understanding color - 2</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(200, 200, 200);
+            color: white;
+            padding: 20px;
+            font-family: arial, verdana, sans-serif;
+        }
+
+        h1 {
+            background-color: darkcyan;
+            padding: inherit;
+        }
+
+        .mytable {
+            background-color: white;
+            color: purple;
+            border: 1px solid;
+        }
+
+        .mytable th {
+            color: #ee3e80 !important;
+        }
+
+        .mytable td#uno {
+            background-color: #66cdaa;
+            color: gold;
+        }
+
+        .mytable td#dos {
+            background-color: rgb(102, 205, 170);
+            color: blue;
+        }
+
+        .mytable td#tres {
+            background-color: mediumaquamarine;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>entendiendo el color - 2</h1>
+    <table class="mytable">
+        <tr>
+            <th>valores RGB</th>
+            <th>codigo hexadecimal</th>
+            <th>Nombre de colores</th>
+        </tr>
+        <tr>
+            <td>los valores de rojo, verde y azul se expresan como numeros entre 0 y 255.</td>
+            <td>los valores hexadecimales representan valores para rojo , verde y azul en codigo hexadecimal.
+            </td>
+            <td>los valores se representan mediante nombres predefinidos . sin embargo, son muy limitados en
+                numero</td>
+        </tr>
+        <tr>
+            <td id="uno">celda rgb</td>
+            <td id="dos">celda hex</td>
+            <td id="tres">celda name</td>
+        </tr>
+        <tr>
+            <td>rgb(102,205,170)</td>
+            <td>#66cdaa</td>
+            <td>Mediumaquamarine</td>
+        </tr>
+        <tr>
+            <td>este color se compone de los siguientes valores:<br />
+                102 rojo<br /> 205 verde<br />170
+                azul
+            </td>
+            <td>el valor del rojo , 102, se expresa como 66 en codigo hexadecimal.<br />
+                el 205 del verde se expresa como cd <br /> y el 170 del azul equivale a aa.</td>
+            <td>Hay 147 nombres de color soportados por los navegadores (este color es mediumaquamarine).
+                la mayoria considera que esto es una paleta de colores limitados , y es dificil recordar el
+                nombre de cada uno de los colores </td>
+        </tr>
+    </table>
+</body>
+
+</html>
