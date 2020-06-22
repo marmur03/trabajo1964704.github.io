@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Border Style - Border Color</title>
+    <style type="text/css">
+        body {
+            font-family: verdan, arial, sans-serif;
+            font-size: 48px;
+            color: #111111;
+        }
+
+        div {
+            border: 15px solid #cc4d47;
+            background-color: #54b1ff;
+            box-shadow: inset 0 0 0 15px #adb33e;
+            padding: 30px;
+            width: 210px;
+            height: auto;
+        }
+
+        div span {
+            background-color: white;
+        }
+
+        p#bor {
+            color: #adb33e;
+            font-size: 24px;
+        }
+
+        p#mar {
+            color: #cc4d47;
+            font-size: 24px;
+        }
+
+        p#pad {
+            color: #54b1ff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>ejemplo.</span>
+    </div>
+    <p id="mar">1. margin: los margenes estan fuera del borde.</p>
+    <p id="bor">1. border: cada cuadro tiene un border.</p>
+    <p id="pad">3. padding: el relleno es el espacio entre el borde y
+        cualquier texto incluido.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Min Width Max Width</title>
+    <style type="text/css">
+        body {
+            font-family: arial, verdana, sans-serif;
+            color: #111111;
+        }
+
+        th {
+            border-bottom: 1px solid#0088dd;
+            text-align: left;
+            color: #0088dd;
+            font-weight: normal;
+        }
+
+        td {
+            min-width: 150px;
+            min-height: 200px;
+            vertical-align: top;
+            line-height: 1.4em;
+        }
+
+        td.description {
+            min-width: 450px;
+            max-width: 650px;
+            text-align: left;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>photo</th>
+            <th>description</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td><img src="images/rhodes.jpg" width="200" height="150" alt="fender rhodes" /></td>
+            <td class="description">algunos diseños de pagian se expanden y se reducen para ajustar
+                al tamaño de la pantalla del usuario. se utiliza la propiedad min-width y la propiedad
+                max-width .</td>
+            <td>$1400</td>
+        </tr>
+        <tr>
+            <td><img src="images/wurlitzer.jpg" width="200" height="150" alt="wurlitzer ep200" /></td>
+            <td class="description">estas son propiedades muy utiles para garantizar que el contenido
+                de las paqinas sean legibles (especialmete en las pantallas mas pequeñas de dispositivos portatiles).
+            </td>
+            <td>$1600</td>
+        </tr>
+        <tr>
+            <td><img src="images/wurlitzer.jpg" width="200" height="150" alt="wurlitzer ep 200" /></td>
+            <td class="description">es util probar este ejemplo en el navegador para ver lo que suceda
+                cuando aumenta o disminuye el tamaño de la ventana del navegador.</td>
+            <td>$1200</td>
+        </tr>
+    </table>
+</body>
+
+</html>

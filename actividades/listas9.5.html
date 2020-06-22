@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta codif="UFT-8">
+    <title>Table Properties</title>
+    <style class="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111111;
+        }
+
+        table {
+            width: 600px;
+        }
+
+        th,
+        td {
+            padding: 7px 10px 10px 10px;
+        }
+
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 90%;
+            border-bottom: 2px solid #111111;
+            border-top: 1px solid #999;
+            text-align: left;
+        }
+
+        tr.even {
+            background-color: #efefef;
+        }
+
+        tr:hover {
+            background-color: #c3e6e5;
+        }
+
+        .money {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>first edition auctions</h1>
+    <table>
+        <tr>
+            <th>autor</th>
+            <th>titulo</th>
+            <th class="money">precio de reserva</th>
+            <th class="money">oferta actual</th>
+        </tr>
+        <tr>
+            <td>gabriel garcia marques</td>
+            <td>cien años de soledad</td>
+            <td class="money">4,000.00</td>
+            <td class="money">$5,642.50</td>
+        </tr>
+        <tr class="even">
+            <td>gonzalo arango</td>
+            <td>primer manifiesto nadaista</td>
+            <td class="money"></td>
+            <td class="money">$3.866.00</td>
+        </tr>
+        <tr>
+            <td>rafael pombo</td>
+            <td>juam matachin</td>
+            <td class="money">1,250.00</td>
+            <td class="money">$2,499.00</td>
+        </tr>
+        <tr class="even">
+            <td>migel antonio caro</td>
+            <td>obra selecta</td>
+            <td class="money"></td>
+            <td class="money">$1031.72</td>
+        </tr>
+    </table>
+    <p>hay varias propiedades que se utilizan habitualmente en las tablas. aqui hay algunos consegos para las
+        tablas y asegurarse de que son faciles de aplicar:
+    </p>
+    <ul>
+        <li>agregar relleno ayuda a mejorar la legibilidad de una celda.</li>
+        <li>colocar todos los encabezados en negrita.</li>
+        <li>sombrear filas ayuda a los usuarios a seguir las lineas.</li>
+        <li>alinear numeros a la derecha permite distinguirlos de forma facil</li>
+    </ul>
+</body>
+
+</html>

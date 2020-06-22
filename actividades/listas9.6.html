@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta codif="UFT-8">
+    <title>Empty Cells - Gaps Between Cells</title>
+    <style type="text/css">
+        td.up {
+            border: 1px solid #001522;
+            padding: 15px;
+        }
+
+        table.one {
+            empty-cells: show;
+        }
+
+        table.two {
+            empty-cells: hide;
+        }
+
+        td.down {
+            background-color: #0088dd;
+            padding: 15px;
+            border: 2px solid #000000;
+        }
+
+        table.three {
+            border-spacing: 5px 15px;
+        }
+
+        table.four {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="one">
+        <tr>
+            <td class="up">1</td>
+            <td class="up">2</td>
+        </tr>
+        <tr>
+            <td class="up">3</td>
+            <td class="up"></td>
+        </tr>
+    </table>
+    <p> si hay celdas vacias en una tabla, se puede usar la propiedad de celdas
+        vacias para especificar si sus bordes se deben mostar o no. <br />
+        en la tabla superior, se puede ver que se muestra una celda vacia.
+        en la tabla inferior, la celda esta oculta.</p>
+    <br />
+    <table class="three">
+        <tr>
+            <td class="down">5</td>
+            <td class="down">6</td>
+        </tr>
+        <tr>
+            <td class="down">7</td>
+            <td class="down">8</td>
+        </tr>
+    </table>
+    <table class="four">
+        <tr>
+            <td class="down">5</td>
+            <td class="down">6</td>
+        </tr>
+        <tr>
+            <td class="down">7</td>
+            <td class="down">8</td>
+        </tr>
+    </table>
+    <p> la propiedad de border spacing: pemite controlar la distancia entre las celdas adyacentes.
+        de forma predeterminada, los exploradores suelen dejar un pequeño hueco entre cada celda de
+        la tabla, por lo que si desea aumentar o disminuir este espacio, la propiedad de :
+        border-spacing le permite controlar la brecha.
+    </p>
+</body>
+
+</html>

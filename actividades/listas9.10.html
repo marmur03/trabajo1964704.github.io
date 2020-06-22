@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta codif="UFT-8">
+    <title>Alligning Form Controls - Problem</title>
+    <style type="text/css">
+        body {
+            font-family: arial, verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="example.php" method="post">
+        <div>
+            <label for="name" class="title">name:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="email" class="title">email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="radio-buttons">
+            <span class="title">gender:</span>
+            <input type="radio" name="gender" id="male" value="m" />
+            <label for="male">m</label>
+            <input type="radio" name="gender" id="female" value="r" />
+            <label for="femela">f</label> <br />
+        </div>
+        <div class="submit">
+            <input type="submit" value="register" id="submit" />
+        </div>
+    </form>
+    <p>las etiquetas de los elementos de formulario suelen ser longitudes
+        diferentes, lo que significa que los controles del formulario no
+        apareceran en linea recta.
+    </p>
+</body>
+
+</html>

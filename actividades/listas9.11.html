@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta codif="UFT-8">
+    <title>Aligning Form Controls - Solution</title>
+    <style type="text/css">
+        body {
+            font-family: arial, verdana, sans serif;
+        }
+
+        div {
+            border-bottom: 1px solid #efefef;
+            margin: 10px;
+            padding-bottom: 10px;
+            width: 260px;
+        }
+
+        .title {
+            float: left;
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .radio-buttons label {
+            float: none;
+        }
+
+        .submit {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="example.php" method="post">
+        <div>
+            <label for="name" class="title">name</label>
+            <input type="text" id="email" name="name" />
+        </div>
+        <div>
+            <label for="email" class="title">email</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="radio-buttons">
+            <span class="title">gender:</span>
+            <input type="radio" name="gender" id="male" value="m" />
+            <label for="male">m</label>
+            <input type="radio" name="gender" id="female" value="f" />
+            <label for="femela">f</label><br />
+        </div>
+        <div class="submit">
+            <input type="submit" value="register" id="submit" />
+        </div>
+    </form>
+    <p>cada fila del formulario tiene un titulo que le dice a los usuarios lo que
+        necesitan para ingresar. para las entradasde texto, el titulo esta en el
+        elemento &lt;label&gt; para los botones de radio, el titulo esta en un
+        elenemto &lt;span&gt; ambos tienen un atributo de clase con un valor de
+        title.
+    </p>
+    <p>al establecer la propiedad width en esos elementos, sabemos que los titulos
+        tendran el mismo ancho. por lo tanto, los controles de formula que se
+        encuentran en el interior se alinen.
+    </p>
+</body>
+
+</html>
