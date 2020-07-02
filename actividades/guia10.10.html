@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parent Float - Solution</title>
+    <style type="text/css">
+        body {
+            width: 752px;
+            font-family: Arial, Verdana, sans-serif;
+            color: #665544;
+        }
+
+        div {
+            border: 1px solid #665544;
+            overflow: auto;
+            width: 100%;
+        }
+
+        div.examplel {
+            border: none
+        }
+
+        p {
+            width: 230px;
+            float: left;
+            margin: 10px;
+        }
+
+        p.example {
+            position: relative;
+            top: 40px;
+            left: 100px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Parent Float - Solution</h1>
+    <h2>Tipos de Bicicletas (4):</h2>
+    <div>
+        <p><span>La bicicleta reclinada:
+
+            </span> el ciclista adopta una posición más cómoda pero
+            también muy aerodinámica</p>
+        <p><span>Bicicleta estática:</span> Es una máquina para hacer ejercicio con un
+            disco que es accionado
+            a través de unos pedales y con un sistema de fricción.</p>
+        <p><span>Bicicletas Modernas:</span> Son livianas,
+
+            fuertes y rapidas. </p>
+        <p class="clear"><span>Bicicletas Personalizadas: </span> Son modificadas por sus propietarios.
+        </p>
+        <p><span>Bicicleta generadora de electricidad:</span> Puede ser una bicicleta estática
+            o dinámica que permite obtener energía eléctrica con el pedaleo.</p>
+        <p><span>La bicicleta de mano: </span>
+            Es una bicicleta de tres ruedas que se propulsa, se dirige
+            y se frena con los brazos.</p>
+    </div> <br />
+    <div class="example1">
+        <p>1. La solución CSS agrega dos reglas CSS al
+            elemento contenedor (en este ejemplo el
+            elemento &lt;div&gt;), la propiedad overflow: tiene un valor auto y la propiedad
+            width: se establece en 100%.</p>
+    </div>
+</body>
+
+</html>

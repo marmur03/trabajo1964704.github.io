@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using Float to Place Elements Side-by-Side</title>
+    <style type="text/css">
+        body {
+            width: 750px;
+            font-family: Arial, Verdana, sans-serif;
+            color: #665544;
+        }
+
+        p {
+            width: 230px;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            background-color: #efefef;
+        }
+
+        p.example {
+            position: relative;
+            top: 40px;
+            left: 100px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usar float para colocar elementos en paralelo: </h1>
+    <h2>Tipos de Bicicletas: </h2>
+    <p><span>La bicicleta doméstica: </span> Son dedicadas a todo tipo de usos cotidianos,
+        especialmente trayectos cortos.</p>
+    <p><span>La bicicleta de montaña:</span> Es una bicicleta destinada para el ámbito
+        deportivo en terrenos agrestes, por lo que la resistencia de sus partes es su principal
+        característica.</p>
+    <p><span>La bicicleta de carreras: </span> Está diseñada y construida para la velocidad.</p>
+    <p><span>La bicicleta de turismo: </span> Es utilizada para recorrer distancias largas y
+        cargas pesadas están diseñadas para la comodidad.</p>
+    <p><span>La bicicleta plegable: </span>
+        es una bicicleta que se puede hacer más pequeña
+        doblándola en dos o más partes.</p>
+    <p><span>La bicicleta híbrida: </span> Su estructura o cuadro combina características
+        de la
+        bicicleta de carretera y la de montaña.</p>
+    <p class="example">1. Una gran cantidad de diseños colocan cajas al lado y lado. La
+        propiedad float se usa habitualmente para lograr esto. Cuando los elementos flotan,
+        la altura de las cajas puede afectar a donde se ubican los siguientes elementos</p>
+    <p class="example">2. En este ejemplo,
+        se puede ver seis párrafos de bicicletas, cada uno de los cuales tiene un width y un float conjunto de
+        propiedades.
+        El cuarto párrafo no
+        del borde izquierdo de la página como cabría esperar. Más bien se encuentra justo en el tercer párrafo.</p>
+    <p class="example">3. La razón de esto es que el cuarto párrafo tiene espacio para comenzar
+        bajo el tercer párrafo, pero no puede ir más lejos a la izquierda porque el segundo párrafo está en el camino.
+        Establecer la altura de los párrafos para que sea la misma altura que el párrafo más alto resolvería este
+        problema,
+        sv pero rara vez se adapta a
+        diseños del mundo real donde la cantidad de texto en un párrafo o columna puede variar.</p>
+</body>
+
+</html>
